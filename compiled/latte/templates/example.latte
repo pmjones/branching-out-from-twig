@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Example</title>
+</head>
+<body>
+<p>Hello, {$name}!</p>
+<div foo="{$name}">{$name|noescape}</div>
+{if empty($list)}
+	<p>No items in list.</p>
+{else}
+	<ul>
+	{foreach $list as $item}
+		<li>{$item['value']}</li>
+	{/foreach}
+	</ul>
+{/if}
+</body>
+</html>

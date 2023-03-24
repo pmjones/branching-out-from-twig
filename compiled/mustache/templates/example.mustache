@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Example</title>
+</head>
+<body>
+<p>Hello, {{ name }} ?>!</p>
+<div foo="{{ name }} ?>">{{{ name }}}</div>
+{{^list}}
+	<p>No items in list.</p>
+{{/list}}
+<ul>
+{{#list}}
+	<li>{{ value }}</li>
+{{/list}}
+</ul>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+    "require": {
+        "php": "^8.0",
+        "twig/twig": "^3.5",
+        "latte/latte": "^3.0",
+        "qiq/qiq": "2.x@dev",
+        "smarty/smarty": "^4.3",
+        "aura/view": "^2.4",
+        "aura/html": "^2.6",
+        "league/plates": "^3.5",
+        "mustache/mustache": "^2.14",
+        "phpstan/phpstan": "^1.0",
+        "phptal/phptal": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "scripts": {
+        "analyze-plates": "./vendor/bin/phpstan analyze --level=max ./native/plates/templates/example.php",
+        "analyze-plates-stan": "./vendor/bin/phpstan analyze --level=max ./native/plates/templates/example-stan.php",
+        "analyze-plates-stan-helper": "./vendor/bin/phpstan analyze --level=max ./native/plates/templates/example-helper.php",
+        "analyze-qiq": "./vendor/bin/phpstan analyze --level=max ./qiq/compiled/Users/pmjones/Code/template-compare/qiq/templates/example-compiled.php",
+        "analyze-qiq-stan": "./vendor/bin/phpstan analyze --level=max ./qiq/compiled/Users/pmjones/Code/template-compare/qiq/templates/example-compiled-stan.php",
+        "analyze-qiq-stan-helper": "./vendor/bin/phpstan analyze --level=max ./qiq/compiled/Users/pmjones/Code/template-compare/qiq/templates/example-compiled-helper.php"
+    }
+}
